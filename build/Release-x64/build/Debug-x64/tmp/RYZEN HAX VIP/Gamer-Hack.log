@@ -1,0 +1,23 @@
+﻿  imgui_tables.cpp
+  AimForm.cpp
+  intel_driver.cpp
+  DrvMapper.cpp
+  MainForm.cpp
+  pch.cpp
+  ProcManager.cpp
+  Utilities.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx9.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  Settings.cpp
+  portable_executable.cpp
+  main.cpp
+  Drvutils.cpp
+  Overlay.cpp
+  service.cpp
+imgui_tables.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+LIBCMT.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ)
+F:\DEV\Sources\PC GAMER\PC GAMER\build\Debug-x64\RYZEN HAX VIP.exe : fatal error LNK1120: 1 unresolved externals

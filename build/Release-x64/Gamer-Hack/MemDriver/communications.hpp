@@ -1,0 +1,33 @@
+#pragma once
+
+#include <Windows.h>
+#include "../pch.h"
+
+/* IOCTL Codes needed for our driver */
+#define IOCTL_RPM CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0583, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
+#define IOCTL_WPM CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0738, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
+
+#define IOCTL_ALLOC CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0678, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
+#define IOCTL_DEALLOC CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0327, METHOD_BUFFERED, FILE_SPECIAL_ACCESS)
+
+
+typedef struct MemStruct_t {
+	int pid = 0;
+	DWORD_PTR address=0;
+	void* value=0;
+	SIZE_T size;
+	PVOID  data;
+}MemStruct, * p_MemStruct;
+typedef struct _KERNEL_READ_REQUEST
+{
+	ULONG ProcessId;
+
+	ULONG Address;
+	PVOID pBuff;
+	ULONG Size;
+
+} KERNEL_READ_REQUEST, * PKERNEL_READ_REQUEST;
+
+
+
+

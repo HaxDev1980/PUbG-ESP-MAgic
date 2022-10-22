@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="drawing">
+      <UniqueIdentifier>{c378eee7-79d5-475e-94d9-b2dafffd24d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drawing\Color">
+      <UniqueIdentifier>{30383736-1f73-46f6-93bb-70ed96805af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{08f63f3f-1013-4599-be0c-3fa5b9140b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct2D">
+      <UniqueIdentifier>{d1367cf3-7872-4500-bc91-a5e4bbe50e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct2D\Surface">
+      <UniqueIdentifier>{881439c7-cb3a-4c3a-a016-097fbac66529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct2D\Font">
+      <UniqueIdentifier>{67477d5f-9cc6-40cc-bc49-ea8026b6b599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct3D">
+      <UniqueIdentifier>{440681f1-478e-44e0-8876-ecf7eb82d25d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct3D\Surface">
+      <UniqueIdentifier>{30d32a99-43fc-42cb-bfe6-ec5535847e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Direct3D\Font">
+      <UniqueIdentifier>{6b3ba2fc-1f7e-4f12-974b-533c686665e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Surface">
+      <UniqueIdentifier>{ec6c11c2-fd7b-4ba8-961c-7986580a146d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Overlay">
+      <UniqueIdentifier>{dc77c9fa-15ae-455f-a86f-3d9ba39bdbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Font">
+      <UniqueIdentifier>{dd8bc1b8-6e18-4fcc-a87d-5232b69999c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{e95381ab-4d03-45a9-a4dd-6103a1498a00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="MainEntry\main.cpp" />
+    <ClCompile Include="EmulatorProcess\ProcManager.cpp" />
+    <ClCompile Include="MemDriver\Utilities.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="DriverMapper\intel_driver.cpp" />
+    <ClCompile Include="DriverMapper\portable_executable.cpp" />
+    <ClCompile Include="DriverMapper\service.cpp" />
+    <ClCompile Include="DriverMapper\DrvMapper.cpp" />
+    <ClCompile Include="Main_Esp\MainForm.cpp" />
+    <ClCompile Include="Main_Esp\Settings.cpp" />
+    <ClCompile Include="Main_Esp\AimForm.cpp" />
+    <ClCompile Include="include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="OverlayDock\Overlay.cpp" />
+    <ClCompile Include="DriverMapper\Drvutils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\stdafx.hpp" />
+    <ClInclude Include="include\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDriver\KernelHelper.hpp" />
+    <ClInclude Include="MemDriver\communications.hpp" />
+    <ClInclude Include="EmulatorProcess\ProcManager.h" />
+    <ClInclude Include="MemDriver\Utilities.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="DriverMapper\intel_driver.hpp" />
+    <ClInclude Include="DriverMapper\intel_driver_resource.hpp" />
+    <ClInclude Include="DriverMapper\nt.hpp" />
+    <ClInclude Include="DriverMapper\portable_executable.hpp" />
+    <ClInclude Include="DriverMapper\service.hpp" />
+    <ClInclude Include="DriverMapper\DrvMapper.hpp" />
+    <ClInclude Include="DriverMapper\kernel_driver_resource.hpp" />
+    <ClInclude Include="Main_Esp\MainForm.h" />
+    <ClInclude Include="Main_Esp\Settings.h" />
+    <ClInclude Include="Main_Esp\AimForm.h" />
+    <ClInclude Include="Structss\Vector3s.h" />
+    <ClInclude Include="Structss\Rotator-s.h" />
+    <ClInclude Include="OverlayDock\Overlay.hpp" />
+    <ClInclude Include="Game Misc\GameOffsets.h" />
+    <ClInclude Include="DriverMapper\Drvutils.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Protection\xor.h" />
+    <ClInclude Include="Protection\xorstr.h" />
+    <ClInclude Include="Game Misc\GStructs.h" />
+    <ClInclude Include="xorstr.hpp" />
+    <ClInclude Include="termcolor.hpp" />
+    <ClInclude Include="api\KeyAuth.hpp" />
+    <ClInclude Include="api\xorstr.hpp" />
+    <ClInclude Include="syscall.h" />
+    <ClInclude Include="Game Misc\iconcpp.h" />
+    <ClInclude Include="Game Misc\icon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="example.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+</Project>

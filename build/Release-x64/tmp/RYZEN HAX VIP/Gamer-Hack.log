@@ -1,0 +1,24 @@
+﻿  imgui_tables.cpp
+  intel_driver.cpp
+  DrvMapper.cpp
+  pch.cpp
+  ProcManager.cpp
+  Utilities.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx9.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  Settings.cpp
+  portable_executable.cpp
+  Overlay.cpp
+  AimForm.cpp
+  MainForm.cpp
+  main.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\consoleapi.h(42,1): message : see previous definition of 'FreeConsole' (compiling source file MainEntry\main.cpp)
+  service.cpp
+  Drvutils.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+AimForm.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+  Gamer-Hack.vcxproj -> D:\Rockstar Games\PC GAMER\build\Release-x64\RYZEN HAX VIP.exe
